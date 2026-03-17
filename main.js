@@ -49,17 +49,8 @@ const revealOnScroll = () => {
 window.addEventListener('scroll', revealOnScroll);
 revealOnScroll(); // Initial check
 
-// Sticky Header
+// Sticky Header handled via CSS
 const header = document.querySelector('header');
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        header.style.padding = '1rem 0';
-        header.style.background = 'rgba(0, 0, 0, 0.95)';
-    } else {
-        header.style.padding = '1.5rem 0';
-        header.style.background = 'rgba(0, 0, 0, 0.8)';
-    }
-});
 
 // Show More Services Logic
 const showMoreBtn = document.getElementById('show-more-services');
